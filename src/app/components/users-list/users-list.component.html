@@ -1,0 +1,36 @@
+<div class="users-list">
+  <table [dataSource]="usersList" class="mat-elevation-z8" mat-table>
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Coluna Nome -->
+    <ng-container matColumnDef="name">
+      <th *matHeaderCellDef mat-header-cell> Nome</th>
+      <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
+          mat-cell> {{ element.nome }}
+      </td>
+    </ng-container>
+
+    <!-- Coluna de Data de Cadastro -->
+    <ng-container matColumnDef="date">
+      <th *matHeaderCellDef mat-header-cell> Data de Cadastro</th>
+      <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
+          mat-cell> {{ element.dataCadastro }}
+      </td>
+    </ng-container>
+
+    <!-- Coluna de Status -->
+    <ng-container matColumnDef="status">
+      <th *matHeaderCellDef mat-header-cell> Status</th>
+      <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
+          mat-cell> {{ element.ativo }}
+      </td>
+    </ng-container>
+
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+  </table>
+
+
+</div>

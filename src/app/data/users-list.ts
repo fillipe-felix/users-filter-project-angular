@@ -35,7 +35,7 @@ export const UsersList: IUser[] = [
       Pais: "Brasil"
     },
     telefone: "21998765432",
-    ativo: true,
+    ativo: false,
     funcao: "Analista de Sistemas",
     dataCadastro: "2021-05-15T10:00:00.000Z",
     status: {
@@ -101,7 +101,7 @@ export const UsersList: IUser[] = [
       Pais: "Brasil"
     },
     telefone: "51992345678",
-    ativo: true,
+    ativo: false,
     funcao: "Administrador de Redes",
     dataCadastro: "2022-01-10T10:45:00.000Z",
     status: {
@@ -145,7 +145,7 @@ export const UsersList: IUser[] = [
       Pais: "Brasil"
     },
     telefone: "31997531234",
-    ativo: true,
+    ativo: false,
     funcao: "Engenheiro de Software",
     dataCadastro: "2017-02-18T15:00:00.000Z",
     status: {
