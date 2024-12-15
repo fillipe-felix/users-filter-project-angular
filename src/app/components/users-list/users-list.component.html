@@ -16,7 +16,7 @@
     <ng-container matColumnDef="date">
       <th *matHeaderCellDef mat-header-cell> Data de Cadastro</th>
       <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
-          mat-cell> {{ element.dataCadastro }}
+          mat-cell> {{ element.dataCadastro | date: 'dd/MM/yyyy' }}
       </td>
     </ng-container>
 
