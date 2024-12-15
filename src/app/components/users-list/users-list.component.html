@@ -8,7 +8,7 @@
     <ng-container matColumnDef="name">
       <th *matHeaderCellDef mat-header-cell> Nome</th>
       <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
-          mat-cell> {{ element.nome }}
+          mat-cell> {{ element.nome | dashIfEmpty }}
       </td>
     </ng-container>
 
@@ -16,7 +16,7 @@
     <ng-container matColumnDef="date">
       <th *matHeaderCellDef mat-header-cell> Data de Cadastro</th>
       <td (click)="onUserSelected(element)" *matCellDef="let element" class="users-list__item"
-          mat-cell> {{ element.dataCadastro | date: 'dd/MM/yyyy' }}
+          mat-cell> {{ element.dataCadastro | date: 'dd/MM/yyyy' | dashIfEmpty }}
       </td>
     </ng-container>
 

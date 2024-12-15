@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 import { PhonePipe } from './phone.pipe';
 import { AddressPipe } from './address.pipe';
 import { StatusPipe } from './status.pipe';
+import { DashIfEmptyPipe } from './dash-if-empty.pipe';
 
 
 @NgModule({
   declarations: [
     PhonePipe,
     AddressPipe,
-    StatusPipe
+    StatusPipe,
+    DashIfEmptyPipe
   ],
   exports: [
     PhonePipe,
     AddressPipe,
-    StatusPipe
+    StatusPipe,
+    DashIfEmptyPipe
   ],
   imports: [
     CommonModule
