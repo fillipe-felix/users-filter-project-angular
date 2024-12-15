@@ -8,19 +8,17 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: red;
-//  Organiza as div filhas verticalmente
+  //  Organiza as div filhas verticalmente
 }
 
 .top-div {
   flex-grow: 1;
-  background-color: aqua;
-//  Preenche todo o espaco disponivel
+  //  Preenche todo o espaco disponivel
 }
 
 .main-left-div {
   height: 80%;
-//  Ocupa 80% da altura do seu container pai
+  //  Ocupa 80% da altura do seu container pai
 }
 
 .right-div {
